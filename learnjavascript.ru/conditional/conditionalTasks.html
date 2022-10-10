@@ -1,0 +1,36 @@
+<html>
+    <body>
+        <script>
+            // task1
+            let userAnswer1 = prompt('Какое "официальное название JavaScript?"','ваш ответ');
+            if (userAnswer1 == "ECMAScript") {
+                alert("Верно!");
+            } else {
+                alert('Не знаете? "ECMAScript"!');
+            }
+
+            //task2
+            let userAnswer2 = prompt("Введите число, чтобы узнать его знак");
+            if (userAnswer2 > 0) {
+                alert ("1");
+            } else if (userAnswer2 < 0) {
+                alert ("-1");
+            } else {
+                alert ("0 или ввели Not-a-Number");
+            }
+
+            //task3
+            let a = 1, b = 4;
+            let result = (a + b < 4) ? "Мало" : "Много";
+            alert(result);
+
+            //task4
+            let login = prompt("Введите логин:");
+            let message = (login == 'Сотрудник')? 'Привет'
+            : (login == 'Директор') ? 'Здравствуйте'
+            : (login == '') ? 'Нет логина' 
+            : '';
+            alert(message);
+        </script>
+    </body>
+</html>

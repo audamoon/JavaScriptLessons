@@ -3,7 +3,7 @@ function messagesDemo() {
     let userAnswer = confirm("Do you want to enter your name?");
 
     if (userAnswer == true) {
-        let userName =prompt("What is your name?", "enter your name here");
+        let userName = prompt("What is your name?", "enter your name here");
 
         if (userName != null) {
             alert(`Hello, ${userName}! :D`);

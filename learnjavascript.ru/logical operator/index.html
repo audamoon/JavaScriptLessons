@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Задание</title>
+    </head>
+    <body>
+        <script>
+            let userLogin = prompt("Кто там?", "");
+            if (userLogin == "Админ") {
+                let password = prompt("Пароль?", "");
+                if (password == "Я главный") {
+                    alert("Здравствуйте!");
+                } else if (password === '' || password === null){
+                    alert("Отменено");
+                } else {
+                    alert("Неверный пароль");
+                }
+            } else if (userLogin === '' || userLogin === null){
+                alert("Отменено");
+            } else {
+                alert("Я вас не знаю");
+            }
+        </script>
+    </body>
+</html>

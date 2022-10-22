@@ -22,19 +22,20 @@ while (true) {
     if (userNumber % 5 == 0) break;
     userNumber++;
 }
-console.log(userNumber);
+console.log(userNumber); //break interrupt loop
 
 console.log("Continue:");
 for (let OddNumber = 0; OddNumber < 6; OddNumber++) {
     if (OddNumber % 2 == 0) continue;
     console.log(OddNumber);
-}
-console.log("labels:");
+} /* continue terminates execution of the statements in the current iteration 
+and continues execution of the loop with the next iteration */
+console.log("labels:"); 
 loop1: for(let i = 0; i < 3; i++) {
     for (let j = 0; j < 3; j++) {
         if (j == 1) continue loop1;
         console.log(`Coordinates i = ${i}, j = ${j}`);
     }
     console.log("iteration N",i);
-} //label let you identify loop and then use break or continue
-//In this example last console.log will not work, because continue will skip 
+} /*label let you identify loop and then use break or continue
+In this example last console.log will not work, because continue will skip loop1's iteration */

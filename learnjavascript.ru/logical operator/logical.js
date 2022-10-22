@@ -14,4 +14,10 @@ console.log(x2,y2,"\n") //returns 2,1
 
 console.log("Logican !(NOT):");
 console.log(!true);
-console.log(!!""); //returns false. Analogue of Boolean
+console.log(!!"","\n"); //returns false. Analogue of Boolean
+
+console.log("Nullish coalescing operator ??:"); //returns right-hand side operand when its left-hand side operand is null or undefined. Otherwise returns left-hand side operand.
+let flag = null;
+console.log(flag??"Default"); //returns Default
+let username = "Ivan";
+console.log(username??"???"); //returns Ivan
